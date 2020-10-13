@@ -1,0 +1,80 @@
+body {
+    height: 3000px;
+    background-color: #DDD;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+    display: block;
+}
+
+a {
+    display: block;
+}
+
+.fixed {
+    background: #080;
+    color: #FFF;
+    position: fixed;
+    right: 500px;
+    top: 500px;
+}
+
+.relative{
+    background: #800;
+    color: #FFF;
+    position: relative;
+    left: 200px;
+}
+
+.parent{
+    background-color: #FFF;
+    height: 300px;
+    width: 600px;
+    padding: 10px;
+    position: relative;
+
+}
+
+.absolute{
+    background-color: #F00;
+    color: #FFF;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.left{
+    width: 300px;
+    background-color: #00F;
+    color: #FFF;
+    padding: 10px;
+    margin: 10px;
+    float: left;
+}
+
+.clear{
+    clear: both;
+}
+
+.content{
+    clear: both;
+}
+
+.content:after{
+    content: " CSS";
+}
+
+.direct_child > p{
+    background-color: #800;
+    color: #FFF;
+}
+
+.first_ltr::first-letter{
+    font-size: 200px;
+}
+
+.first_ltr::first-line{
+    color: #F00;
+}
