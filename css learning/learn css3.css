@@ -1,0 +1,130 @@
+*{
+    box-sizing: border-box /*border and padding don't affect in layout*/; 
+ }
+
+#div2{
+    width: 200px;
+    height: 200px;
+    margin: 100px;
+    background-color: red ;
+    border-radius: 50%;
+
+     /* webkit-border-radius: 50%;
+    moz-border-radius: 50%;
+    o-border-radius: 50%;
+    ms-border-radius: 50%; */
+
+    box-shadow: 5px 5px 8px 5px #000 /*inset*/, 
+                -5px -5px 8px 5px blue;
+
+}
+
+section{
+    width: 950px;
+    margin: 20px;
+    background-color: #eee;
+    overflow: hidden;
+}
+
+#div-left{
+    float: left;
+    width: 600PX;
+    background-color: blue;
+    padding: 5px;
+}
+
+#div-right{
+    float: right;
+    width: 350PX;
+    background-color: red;
+    padding: 5px;
+}
+
+#img1{
+    width: 300px;
+    height: 300px;
+    margin: 50px;
+    padding: 3px;
+    background-color: #FFF;
+    border: 1px solid #CCC;
+}
+
+#img1:hover{
+    border-radius: 50%;
+    box-shadow: 7px 7px 20px #e4e4e4;
+}
+
+h1{
+    text-align: center;
+    font-family: Arial, Tahoma;
+    margin: 20px;
+    text-shadow: 1px 2px 3px #F00; /*horizontal-shaddow vertical-shadow blur-raduis color*/
+}
+
+#text-overflow{
+    text-align: center;
+    width: 100px;
+    font-family: Arial, Tahoma;
+    padding: 10px;
+    background-color: #CCC;
+    border: 1px solid rgb(37, 35, 35);
+    margin: 20px;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#text-overflow:hover{
+     overflow: visible;
+}
+
+#without-break-word{
+    text-align: center;
+    width: 100px;
+    font-family: Arial, Tahoma;
+    padding: 10px;
+    background-color: #CCC;
+    border: 1px solid rgb(37, 35, 35);
+    margin: 20px;
+
+    word-wrap: break-word;
+}
+
+#transform{
+    text-align: center;
+    width: 100px;
+    font-family: Arial, Tahoma;
+    padding: 10px;
+    background-color: #CCC;
+    border: 1px solid rgb(37, 35, 35);
+    margin: 20px;
+}
+
+#transform:hover{
+    transition: all 1s ease-in-out;
+    transform: scale(1.2, 1.2) /*scaleX() scaleY()*/ translate(20px, 20px)
+               rotate(30deg) skew(15deg, 15deg);
+               /*matrix(scaleX, skewX, skewY, scaleY, translateX, translateY)*/
+}
+
+body{
+    perspective: 600px;
+    perspective-origin: 50% 50%;
+}
+
+#transform3D{
+    width: 300px;
+    margin-top: 20px;
+    margin-left: 500px;
+    display: block;
+}
+
+#transform3D:hover{
+    transition: all 1s ease-in-out;
+    transform:  rotateX(10deg) rotateY(10deg) rotateZ(10deg)
+                translate3d(20px, 20px, 20px)
+               scale3d(0.5, 2, 1.2);
+              /* matrix3d(scaleX,0,0,0,0,scaleY,0,0,0,0,0,0,0,translateX,translateY, scaleZ,0);*/ 
+               
+}
